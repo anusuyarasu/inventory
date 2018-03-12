@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+.container{
+    background-color:skyblue;
+     background-image: url(signup1.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 680px 680px;
+    padding: 15px;
+}
+
+
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 0.5em;
+}	
+/* Full-width input fields */
+input[type=text], input[type=password] ,input[type=Number]{
+    width: 20%;
+    padding: 5px 5px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: 1 px;
+
+}
+select{
+    width: 20%;
+    padding: 5px 5px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: 1 px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: right;
+  width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 200px) {
+    .cancelbtn, .signupbtn {
+       width: 60%;
+    }
+}
+h1 {
+    background-color:white;
+    color: orange;
+}
+
+</style>
+</head>
+<body>
+
+<form  class="modal-content animate" >
+ 
+  <div class="container">
+   <center><h1 style="text-color=green">Sign Up Form</h1></center>
+    <p>Please fill in this form to create an account.</p>
+    <label for="EmployeeId"><b>EmployeeId:</b></label>
+    <input type="Number" placeholder="Enter Employee Id" id="emId" required><br><br>
+    
+    <label for="Employee Name"><b>Employee Name</b></label>
+    <input type="text" placeholder="Enter Employee Name" id="empName" required><br><br>
+   
+    <label for="Destination"><b>Destination</b></label>
+    <select id="destination">
+     <option value="none">None</option>
+     <option value="Manager">Managers</option>
+     <option value="StockManager">Stock Manager</option>
+     <option value="AssitantManger">Assitant Manager</option>
+     <option value="Production Manager">Production Manager</option>
+     <option value="Sales Manager">Production Manager</option>
+     </select><br><br>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="email" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required><br><br>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password Password" id="psw-repeat" required><br><br>
+    
+   <div class="clearfix">
+     <a href="C:\Users\trainee.01\Desktop\anu\loginpage.html"><button type="button" class="cancelbtn">Cancel</button></a>
+     <a href="C:\Users\trainee.01\Desktop\anu\loginpage.html"><button type="button" class="signupbtn">Sign Up</button></a>
+   </div>    
+
+  </div>
+</form>
+
+</body>
+</html>
