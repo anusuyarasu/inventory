@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body bgcolor="skyblue">
+
+<div ng-app="myApp" ng-controller="datCtrl">
+<h3> {{ today | date: 'dd/MM/yyyy' }}</h3>
+<h3>{{ clock | date:'HH:mm:ss a'}}</h3>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('datCtrl',function($scope, $interval) {
+  var tick = function() {
+    $scope.today=new Date();
+    $scope.clock = Date.now();
+  }
+  tick();
+  $interval(tick, 1000);
+});
+
+</script>
+
+</body>
+</html>
